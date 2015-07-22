@@ -31,7 +31,7 @@
                         <h3 class="panel-title">Porfavor inicie sesión </h3>
                     </div>
                     <div class="panel-body">
-                        <form role="form">
+                        <form action="Login" method="POST">
                             <fieldset>
                                 <div class="form-group">
                                     <input class="form-control" placeholder="E-mail" name="email" type="email" autofocus>
@@ -44,8 +44,7 @@
                                         <input name="remember" type="checkbox" value="Remember Me">Recuerdame
                                     </label>
                                 </div>
-                                <!-- Change this to a button or input when using this as a form -->
-                                <a href="dashboard.jsp" class="btn btn-lg btn-primary btn-block">Iniciar Sesión</a>
+                                <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
                             </fieldset>
                         </form>
                     </div>
