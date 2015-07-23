@@ -49,7 +49,7 @@
                                         </div>
                                         <div class="form-group">
                                             <label for="codigo">Código</label>
-                                            <input type="codigo" class="form-control" name="codigo" id="codigo" placeholder="Ingrese código" required/>
+                                            <input type="text" class="form-control" name="codigo" id="codigo" placeholder="Ingrese código" required/>
                                         </div>
                                         <div class="form-group">
                                             <label for="tipo_titular_id">Tipo</label>

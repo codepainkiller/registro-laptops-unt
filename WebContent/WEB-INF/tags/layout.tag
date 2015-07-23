@@ -178,7 +178,7 @@
                             <a href="#">Registrar Salida</a>
                         </li>
                         <li>
-                            <a href="#">Registrar Laptop</a>
+                            <a href="busca-titular.jsp">Buscar Titular</a>
                         </li>
                         <li>
                             <a href="registra-titular.jsp">Registrar Titular</a>
