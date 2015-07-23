@@ -1,4 +1,4 @@
-package controllers.servlets;
+package com.registrount.controllers.servlets;
 
 import java.io.IOException;
 import java.sql.ResultSet;
@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import controllers.database.MysqlConnect;
+import com.registrount.controllers.database.MysqlConnect;
 
 
 @WebServlet("/Login")

@@ -1,4 +1,4 @@
-package controllers.servlets;
+package com.registrount.controllers.servlets;
 
 import java.io.IOException;
 import javax.servlet.ServletException;

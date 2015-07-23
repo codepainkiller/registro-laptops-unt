@@ -1,4 +1,4 @@
-package controllers.servlets;
+package com.registrount.controllers.servlets;
 
 import java.io.IOException;
 import java.sql.SQLException;
@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import controllers.database.MysqlConnect;
+import com.registrount.controllers.database.MysqlConnect;
 
 
 @WebServlet("/RegistraServlet")

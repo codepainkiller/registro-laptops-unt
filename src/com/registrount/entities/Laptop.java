@@ -1,4 +1,4 @@
-package entities;
+package com.registrount.entities;
 
 public class Laptop {
 	

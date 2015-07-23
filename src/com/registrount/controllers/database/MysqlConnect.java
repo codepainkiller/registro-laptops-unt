@@ -1,4 +1,4 @@
-package controllers.database;
+package com.registrount.controllers.database;
 
 import java.sql.Statement;
 import java.sql.ResultSet;

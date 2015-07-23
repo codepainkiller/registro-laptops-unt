@@ -1,9 +1,10 @@
-package entities;
+package com.registrount.entities;
 
-public class TipoUsuario {
+public class Puerta {
 	
 	private Integer id;
 	private String name;
+	private Integer corriendo; // 1 or 0
 	
 	public Integer getId() {
 		return id;
@@ -19,5 +20,13 @@ public class TipoUsuario {
 	
 	public void setName(String name) {
 		this.name = name;
+	}
+	
+	public Integer getCorriendo() {
+		return corriendo;
+	}
+	
+	public void setCorriendo(Integer corriendo) {
+		this.corriendo = corriendo;
 	}
 }

@@ -1,4 +1,4 @@
-package entities;
+package com.registrount.entities;
 
 import java.util.Date;
 

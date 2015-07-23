@@ -1,4 +1,4 @@
-package controllers;
+package com.registrount.controllers.database;
 
 import java.io.IOException;
 import java.sql.Connection;
@@ -15,8 +15,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import controllers.database.MysqlConnect;
-import entities.Usuario;
+import com.registrount.entities.Usuario;
 
 /**
  * Servlet implementation class HomeController

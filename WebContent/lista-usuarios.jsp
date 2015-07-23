@@ -1,4 +1,4 @@
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page language="java" contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib prefix="t" tagdir="/WEB-INF/tags" %>
 
 <t:layout>
@@ -12,7 +12,10 @@
 				</div>
 			</div>
 			<div class="row">
-				<c:out value="${message }"></c:out>
+				<p>
+
+				</p>
+				
 			</div>
 		</div>
 	</jsp:attribute>
