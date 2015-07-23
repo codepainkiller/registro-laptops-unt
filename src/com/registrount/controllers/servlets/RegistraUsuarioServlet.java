@@ -1,7 +1,6 @@
 package com.registrount.controllers.servlets;
 
 import java.io.IOException;
-import java.sql.SQLException;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -9,10 +8,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.registrount.controllers.database.MysqlConnect;
-import com.registrount.controllers.database.TitularController;
 import com.registrount.controllers.database.UsuarioController;
-import com.registrount.entities.Titular;
 import com.registrount.entities.Usuario;
 
 

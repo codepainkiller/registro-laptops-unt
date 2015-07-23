@@ -5,6 +5,7 @@ import java.sql.SQLException;
 import com.registrount.entities.Titular;
 
 public class TitularController {
+	
 	private static MysqlConnect mysql = MysqlConnect.getInstance();
 	
 	public static int create(Titular titular) {
