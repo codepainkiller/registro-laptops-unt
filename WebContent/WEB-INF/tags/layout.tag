@@ -17,10 +17,13 @@
 
     <link href="assets/plugins/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/plugins/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
+    
+    <jsp:invoke fragment="css_content"/>
+    
     <link href="assets/css/sb-admin-2.css" rel="stylesheet">
     <link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-    <jsp:invoke fragment="css_content"/>
+    
 </head>
 
 <body>
@@ -197,9 +200,10 @@
 <script src="assets/plugins/jquery/dist/jquery.min.js"></script>
 <script src="assets/plugins/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="assets/plugins/metisMenu/dist/metisMenu.min.js"></script>
-<script src="assets/js/sb-admin-2.js"></script>
 
 <jsp:invoke fragment="js_content"/>
+
+<script src="assets/js/sb-admin-2.js"></script>
 
 </body>
 

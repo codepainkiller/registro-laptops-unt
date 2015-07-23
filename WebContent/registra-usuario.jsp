@@ -24,33 +24,33 @@
                                     <div class=col-md-6>
                                         <div class="form-group">
                                             <label for="nombre">Nombre</label>
-                                            <input type="text" class="form-control" name="nombres" id="nombres"/>
+                                            <input type="text" class="form-control" name="nombres" id="nombres" placeholder="Ingrese nombres"/>
                                         </div>
                                         <div class="form-group">
                                             <label for="apellidos">Apellidos</label>
-                                            <input type="text" class="form-control" name="apellidos" id="apellidos"/>
+                                            <input type="text" class="form-control" name="apellidos" id="apellidos" placeholder="Ingrese apellidos"/>
                                         </div>
                                         <div class="form-group">
                                             <label for="direccion">Dirección</label>
-                                            <input type="text" class="form-control" name="direccion" id="direccion"/>
+                                            <input type="text" class="form-control" name="direccion" id="direccion" placeholder="Ingrese dirección"/>
                                         </div>
                                         <div class="form-group">
                                             <label for="telefono">Teléfono</label>
-                                            <input type="text" class="form-control" name="telefono" id="telefono" />
+                                            <input type="text" class="form-control" name="telefono" id="telefono" placeholder="Ingrese número de teléfono"/>
                                         </div>
                                     </div>
                                     <div class=col-md-6>
                                         <div class="form-group">
                                             <label for="dni">DNI</label>
-                                            <input type="number" class="form-control" name="dni" id="dni" />
+                                            <input type="number" class="form-control" name="dni" id="dni" placeholder="Ingrese numero de DNI" />
                                         </div>
                                         <div class="form-group">
                                             <label for="email">Email</label>
-                                            <input type="email" class="form-control" name="email" id="email" />
+                                            <input type="email" class="form-control" name="email" id="email" placeholder="Ingrese e-mail" />
                                         </div>
                                         <div class="form-group">
                                             <label for="password">Contraseña</label>
-                                            <input type="password" class="form-control" name="password" id="password" />
+                                            <input type="password" class="form-control" name="password" id="password" placeholder="Ingrese contraseña"/>
                                         </div>
                                         <div class="form-group">
                                             <label for="tipo_usuario">Tipo</label>
