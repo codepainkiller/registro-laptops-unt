@@ -15,12 +15,12 @@ import com.registrount.controllers.database.MysqlConnect;
 
 
 @WebServlet("/Login")
-public class Login extends HttpServlet {
+public class LoginServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
     
 	public static final String PUBLIC_KEY = "clavesupersecreta";
   
-    public Login() {
+    public LoginServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -28,12 +28,12 @@ public class Login extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		String email = request.getParameter("email");
+		String dni = request.getParameter("dni");
 		String password = request.getParameter("password");
 		String passEncrypt = "AES_ENCRYPT('" + password + "','" + PUBLIC_KEY + "')";
 		
 		String query = "SELECT * FROM usuario WHERE "
-				+ "email='" + email + "' and "
+				+ "dni='" + dni + "' and "
 				+ "password=" + passEncrypt;
 	
 		try {
@@ -46,7 +46,8 @@ public class Login extends HttpServlet {
 				
 				HttpSession session = request.getSession();
 				
-				session.setAttribute("email", email);
+				session.setAttribute("dni", dni);
+				session.setAttribute("email", rs.getString("email"));
 				session.setAttribute("nombres", rs.getString("nombres"));
 				session.setAttribute("apellidos", rs.getString("apellidos"));
 				

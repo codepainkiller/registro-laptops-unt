@@ -11,15 +11,11 @@ import javax.websocket.Session;
 
 
 @WebServlet("/Logout")
-public class Logout extends HttpServlet {
+public class LogoutServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
-    public Logout() {
+    public LogoutServlet() {
         super();
-
     }
     
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -35,5 +31,4 @@ public class Logout extends HttpServlet {
 		request.getSession().invalidate();
 		response.sendRedirect("iniciar-sesion.jsp");
 	}
-
 }

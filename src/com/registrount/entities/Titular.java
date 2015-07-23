@@ -10,7 +10,7 @@ public class Titular {
 	private String	telefono;
 	private String	email;
 	private String	codigo;
-	private Integer	titularId;
+	private Integer	tipoTituarId;
 	
 	public Integer getId() {
 		return id;
@@ -75,12 +75,12 @@ public class Titular {
 	public void setCodigo(String codigo) {
 		this.codigo = codigo;
 	}
-	
-	public Integer getTitularId() {
-		return titularId;
+
+	public Integer getTipoTituarId() {
+		return tipoTituarId;
 	}
-	
-	public void setTitularId(Integer titularId) {
-		this.titularId = titularId;
+
+	public void setTipoTituarId(Integer tipoTituarId) {
+		this.tipoTituarId = tipoTituarId;
 	}
 }

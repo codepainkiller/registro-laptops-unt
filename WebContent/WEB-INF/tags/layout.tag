@@ -168,13 +168,16 @@
                     <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Operador<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li>
-                            <a href="#">Entradas</a>
+                            <a href="#">Registrar Entrada</a>
                         </li>
                         <li>
-                            <a href="#">Salidas</a>
+                            <a href="#">Registrar Salida</a>
                         </li>
                         <li>
                             <a href="#">Registrar Laptop</a>
+                        </li>
+                        <li>
+                            <a href="registra-titular.jsp">Registrar Titular</a>
                         </li>
                     </ul>
                     <!-- /.nav-second-level -->

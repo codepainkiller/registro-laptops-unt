@@ -18,6 +18,8 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# Intellij
+.idea/
 
 ### Eclipse ###
 *.pydevproject
