@@ -8,7 +8,7 @@ import com.registrount.entities.Usuario;
 
 public class UsuarioController {
 	
-	private static final String PUBLIC_KEY = "clavesupersecreta";
+	public static final String PUBLIC_KEY = "clavesupersecreta";
 	private static MysqlConnect mysql = MysqlConnect.getInstance();
 	
 	public static int create(Usuario usuario) {
@@ -18,13 +18,14 @@ public class UsuarioController {
 		passEncrypt = "AES_ENCRYPT('" + usuario.getPassword() + "','" + PUBLIC_KEY + "')";
 		
 		inserQuery = "INSERT INTO usuario("
-				+ "nombres, apellidos, direccion, telefono, email, password, tipo_usuario_id) VALUES("
+				+ "nombres, apellidos, dni, direccion, telefono, email, password, tipo_usuario_id) VALUES("
 				+ "'" + usuario.getNombres() + "',"
 				+ "'" + usuario.getApellidos() + "',"
+				+ "'" + usuario.getDni() + "',"
 				+ "'" + usuario.getDireccion() + "',"
 				+ "'" + usuario.getTelefono() + "',"
 				+ "'" + usuario.getEmail() + "',"
-				+ "'" + passEncrypt + "',"
+				+  passEncrypt + ","
 				+ "'" + usuario.getTipoUsuarioId()+ "')";
 		
 		try {

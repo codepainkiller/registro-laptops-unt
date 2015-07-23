@@ -7,6 +7,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.registrount.controllers.database.TitularController;
 import com.registrount.entities.Titular;
 
 
@@ -34,6 +35,16 @@ public class RegistraTitularServlet extends HttpServlet {
 		titular.setEmail(request.getParameter("email"));
 		titular.setCodigo(request.getParameter("codigo"));
 		titular.setTipoTituarId(Integer.parseInt(request.getParameter("tipo_titular_id")));
+		
+		int result = TitularController.create(titular);
+		
+		if(result > 0) {
+			System.out.println("Se ha registrado el titular");
+			response.sendRedirect("dashboard.jsp");
+		} else {
+			System.out.println("No se registro el titular");
+			response.sendRedirect("registra-titular.jsp");
+		}
 		
 	}
 

@@ -1,4 +1,4 @@
-<%@tag description="Layout de la aplicacion" pageEncoding="UTF-8"%>
+<%@tag language="java" description="Layout de la aplicacion" pageEncoding="UTF-8"%>
 <%@attribute name="content" fragment="true" %>
 <%@attribute name="css_content" fragment="true" %>
 <%@attribute name="js_content" fragment="true" %>
@@ -132,19 +132,18 @@
                 <li class="sidebar-search">
                     <div class="input-group custom-search-form">
                         <input type="text" class="form-control" placeholder="Buscar...">
-                                <span class="input-group-btn">
-                                    <button class="btn btn-default" type="button">
-                                        <i class="fa fa-search"></i>
-                                    </button>
-                                </span>
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
                     </div>
-                    <!-- /input-group -->
                 </li>
                 <li>
-                    <a href="dashboard.jsp"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                    <a href="dashboard.jsp"><i class="fa fa-home fa-fw"></i> Dashboard</a>
                 </li>
                 <li>
-                    <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Administrador<span class="fa arrow"></span></a>
+                    <a href="#"><i class="fa fa-coffee fa-fw"></i> Administrador<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li>
                             <a href="registra-usuario.jsp">Registrar usuario</a>
@@ -156,16 +155,21 @@
                     <!-- /.nav-second-level -->
                 </li>
                 <li>
-                    <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Supervisor<span class="fa arrow"></span></a>
+                    <a href="#"><i class="fa fa-cube fa-fw"></i> Supervisor<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li>
-                            <a href="#">Generar reporte</a>
+                            <a href="#">Reporte de entradas</a>
+                        </li>
+                    </ul>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="#">Reporte de salidas</a>
                         </li>
                     </ul>
                     <!-- /.nav-second-level -->
                 </li>
                 <li>
-                    <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Operador<span class="fa arrow"></span></a>
+                    <a href="#"><i class="fa fa-desktop fa-fw"></i> Operador<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li>
                             <a href="#">Registrar Entrada</a>
@@ -183,7 +187,19 @@
                     <!-- /.nav-second-level -->
                 </li>
                 <li>
-                    <a href="javascript:void(0)"><i class="fa fa-edit fa-fw"></i> Ayuda</a>
+                    <a href="#"><i class="fa fa-bug fa-fw"></i> Master<span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="#">Gestionar cuentas</a>
+                            <a href="#">Registrar puertas</a>
+                            <a href="#">Registrar administrador</a>
+                            <a href="#">Configuraciones de sistema</a>
+                        </li>
+                    </ul>
+                    <!-- /.nav-second-level -->
+                </li>
+                <li>
+                    <a href="javascript:void(0)"><i class="fa fa-question fa-fw"></i> Soporte</a>
                 </li>
 
             </ul>
