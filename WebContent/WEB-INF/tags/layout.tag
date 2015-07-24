@@ -172,7 +172,7 @@
                     <a href="#"><i class="fa fa-desktop fa-fw"></i> Operador<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li>
-                            <a href="#">Registrar Entrada</a>
+                            <a href="registra-entrada.jsp">Registrar Entrada</a>
                         </li>
                         <li>
                             <a href="#">Registrar Salida</a>

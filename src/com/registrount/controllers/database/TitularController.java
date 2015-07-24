@@ -34,6 +34,37 @@ public class TitularController {
 		}
 	}
 	
+	public static Titular get(String dni)  {
+		
+		try {
+			
+			String query = "SELECT * from titular WHERE dni = '" + dni + "'";	
+			ResultSet rs = mysql.query(query);
+			
+			while (rs.next()) {
+				
+				Titular titular = new Titular();
+				
+				titular.setId(rs.getInt("id"));
+				titular.setNombres(rs.getString("nombres"));
+				titular.setApellidos(rs.getString("apellidos"));
+				titular.setDireccion(rs.getString("direccion"));
+				titular.setDni(rs.getString("dni"));
+				titular.setTelefono(rs.getString("telefono"));
+				titular.setEmail(rs.getString("email"));
+				titular.setCodigo(rs.getString("codigo"));
+				titular.setTipoTituarId(rs.getInt("tipo_titular_id"));
+				
+				return titular;
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+			return null;
+		}
+		
+		return null;
+	}
+	
 	public static ArrayList<Laptop> getLaptops(String dni) {
 		ArrayList<Laptop> laptops = new ArrayList<>();
 		
