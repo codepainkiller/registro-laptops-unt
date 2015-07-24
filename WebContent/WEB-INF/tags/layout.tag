@@ -158,12 +158,12 @@
                     <a href="#"><i class="fa fa-cube fa-fw"></i> Supervisor<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li>
-                            <a href="#">Reporte de entradas</a>
+                            <a href="lista-ingresos.jsp">Reporte de entradas</a>
                         </li>
                     </ul>
                     <ul class="nav nav-second-level">
                         <li>
-                            <a href="#">Reporte de salidas</a>
+                            <a href="lista-salidas.jsp">Reporte de salidas</a>
                         </li>
                     </ul>
                     <!-- /.nav-second-level -->

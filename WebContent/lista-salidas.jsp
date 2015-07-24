@@ -7,7 +7,7 @@
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-lg-12">
-					    <h1 class="page-header">Ingresos</h1>
+					    <h1 class="page-header">Salidas</h1>
 					</div>
 				</div>
 			</div>
@@ -16,7 +16,7 @@
                 <div class="col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            Lista de Ingresos
+                            Lista de Salidas
                         </div>
                         <div class="panel-body">
                             <div class="dataTable_wrapper">
@@ -64,8 +64,11 @@
 					"language": {"url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Spanish.json"},
 			    	responsive: true, 
 					"ajax" : {
-						"url" : "ListaIngresosServelet",
+						"url" : "ListaSalidasServlet",
 						"dataSrc": ""
+					},
+					'oTableTools' : {
+						"sSwfPath": "assets/plugins/datatable/swf/copy_csv_xls_pdf.swf"
 					},
 			    	"columns": [
 			    		{"data": "id"},
